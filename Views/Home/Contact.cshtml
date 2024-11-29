@@ -1,0 +1,107 @@
+﻿@{
+    ViewData["Title"] = "Contact";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="~/css/site.css">
+
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        line-height: 1.6;
+    }
+
+    header {
+        background-color: #333;
+        padding: 10px 0;
+    }
+
+    nav ul {
+        display: flex;
+        list-style: none;
+        justify-content: center;
+        padding: 0;
+        margin: 0;
+    }
+
+        nav ul li {
+            margin: 0 15px;
+        }
+
+            nav ul li a {
+                color: #fff;
+                text-decoration: none;
+                font-weight: bold;
+            }
+
+                nav ul li a:hover {
+                    text-decoration: underline;
+                }
+
+    main {
+        margin: 40px auto;
+        max-width: 1000px;
+        padding: 0 20px;
+    }
+
+    .content-container {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .text-container {
+        flex: 1;
+        text-align: justify;
+    }
+
+    .image-container img {
+        max-width: 300px;
+        height: auto;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    h1 {
+        text-align: center;
+        margin-bottom: 30px;
+    }
+</style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a asp-controller="Home" asp-action="Index">Home</a></li>
+                <li><a asp-controller="Home" asp-action="About">About</a></li>
+                <li><a asp-controller="Home" asp-action="WhatAmILookingFor">What Am I Looking For</a></li>
+                <li><a asp-controller="Home" asp-action="Skills">Skills</a></li>
+                <li><a asp-controller="Home" asp-action="Projects">Projects</a></li>
+                <li><a asp-controller="Home" asp-action="Contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1><strong>Contact Me</strong></h1>
+        <p><strong>Email:</strong> uguraksahin1903@gmail.com</p>
+        <p><strong>Phone:</strong> +90 538 819 26 04</p>
+        <p>Feel free to reach out for collaborations or inquiries!</p>
+        <!-- Social Media Icons Section -->
+        <div class="social-icons">
+            <a href="http://www.linkedin.com/in/uguraksahin" target="_blank">
+                <img src="~/images/li.png" alt="LinkedIn" arial-label ="LinkedIn">
+            </a>
+            <a href="http://github.com/UGURAKSAHIN" target="_blank">
+                <img src="~/images/github.png" alt="Github" aria-label="Github">
+            </a>
+        </div>
+    </main>
+</body>
+</html>

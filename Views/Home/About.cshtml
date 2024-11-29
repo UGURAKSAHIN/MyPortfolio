@@ -1,0 +1,106 @@
+﻿@{
+    ViewData["Title"] = "About Me";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me</title>
+    <link rel="stylesheet" href="~/css/site.css">
+    <style>
+        body {
+          font-family: Arial, sans-serif;
+          line-height: 1.6;
+        }
+
+        header {
+          background-color: #333;
+          padding: 10px 0;
+        }
+
+        nav ul {
+          display: flex;
+          list-style: none;
+          justify-content: center;
+          padding: 0;
+          margin: 0;
+        }
+
+        nav ul li {
+          margin: 0 15px;
+        }
+
+        nav ul li a {
+          color: #fff;
+          text-decoration: none;
+          font-weight: bold;
+        }
+
+        nav ul li a:hover {
+          text-decoration: underline;
+        }
+
+        main {
+          margin: 40px auto;
+          max-width: 1000px;
+          padding: 0 20px;
+        }
+
+        .content-container {
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          gap: 20px;
+        }
+
+        .text-container {
+          flex: 1;
+          text-align: justify;
+        }
+
+        .image-container img {
+          max-width: 300px;
+          height: auto;
+          border-radius: 10px;
+          box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+          text-align: center;
+          margin-bottom: 30px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a asp-controller="Home" asp-action="Index">Home</a></li>
+                <li><a asp-controller="Home" asp-action="About">About</a></li>
+                <li><a asp-controller="Home" asp-action="WhatAmILookingFor">What Am I Looking For</a></li>
+                <li><a asp-controller="Home" asp-action="Skills">Skills</a></li>
+                <li><a asp-controller="Home" asp-action="Projects">Projects</a></li>
+                <li><a asp-controller="Home" asp-action="Contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1><strong>About Me</strong></h1>
+        <div class="content-container">
+            <!-- Text Section -->
+            <div class="text-container">
+                <p>Passionate and detail-oriented Software Engineer with expertise in Agile development, ASP.NET Razor, and C#. At Asis Automation and Istanbul Informatics and Smart City Techologies Inc., I have developed scalable software solutions aligned with business objectives. Holding a degree in Electrical and Electronics Engineering from Istanbul Kultur University, I combine technical proficiency with innovative problem-solving. My professional experience and academic background have equipped me to deliver high-quality, practical, and future-focused applications.</p>
+
+            </div>
+            <!-- Image Section -->
+            <div class="image-container">
+                <img src="~/images/PI.jpeg" alt="Personal Image">
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>

@@ -1,0 +1,127 @@
+﻿@{
+    ViewData["Title"] = "Projects";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects</title>
+    <link rel="stylesheet" href="~/css/site.css">
+
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        line-height: 1.6;
+    }
+
+    header {
+        background-color: #333;
+        padding: 10px 0;
+    }
+
+    nav ul {
+        display: flex;
+        list-style: none;
+        justify-content: center;
+        padding: 0;
+        margin: 0;
+    }
+
+        nav ul li {
+            margin: 0 15px;
+        }
+
+            nav ul li a {
+                color: #fff;
+                text-decoration: none;
+                font-weight: bold;
+            }
+
+                nav ul li a:hover {
+                    text-decoration: underline;
+                }
+
+    main {
+        margin: 40px auto;
+        max-width: 1000px;
+        padding: 0 20px;
+    }
+
+    .content-container {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .text-container {
+        flex: 1;
+        text-align: justify;
+    }
+
+    .image-container img {
+        max-width: 300px;
+        height: auto;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    h1 {
+        text-align: center;
+        margin-bottom: 30px;
+    }
+</style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a asp-controller="Home" asp-action="Index">Home</a></li>
+                <li><a asp-controller="Home" asp-action="About">About</a></li>
+                <li><a asp-controller="Home" asp-action="WhatAmILookingFor">What Am I Looking For</a></li>
+                <li><a asp-controller="Home" asp-action="Skills">Skills</a></li>
+                <li><a asp-controller="Home" asp-action="Projects">Projects</a></li>
+                <li><a asp-controller="Home" asp-action="Contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1><strong>Projects</strong></h1>
+
+        <!-- Project 1 -->
+        <section class="project">
+            <h2><strong>Current Time</strong></h2>
+            <p><strong>Date:</strong> Nov 2024</p>
+            <p class="justify-text">Developed a simple yet effective application that displays the current time in real-time. The project utilizes system-based time retrieval and dynamically updates the time display to ensure accuracy and responsiveness. This project helped me enhance my skills in working with time-based data, real-time updates, and building user-friendly interfaces.</p>
+            <h3><strong>Key Highlights:</strong></h3>
+            <ul>
+                <li><strong>Real-time Time Display:</strong> Implemented a dynamic, updating clock to showcase the current system time.</li>
+                <li><strong>Code Optimization:</strong> Focused on efficient retrieval and presentation of time data, ensuring minimal latency in updates.</li>
+                <li><strong>Technology Stack:</strong> C#, ASP.NET Core, Razor, HTML, CSS, JavaScript.</li>
+            </ul>
+            <p class="justify-text">This project allowed me to practice key development skills, including real-time data handling, UI design, and system integration.</p>
+        </section>
+
+        <!-- Project 2 -->
+        <section class="project">
+            <h2><strong>QrCode</strong></h2>
+            <p><strong>Date:</strong> Oct 2024 -Nov 2024</p>
+            <p class="justify-text">I developed a custom QR code generator using C#, designed to enhance efficiency in creating QR codes for product packaging and marketing materials.</p>
+            <h3><strong>Key Highlights:</strong></h3>
+            <ul>
+                <li><strong>Streamlined QR Code Generation:</strong> Automated the creation process to save time and reduce manual effort.</li>
+                <li><strong>Secure Authentication System:</strong> Ensured only authorized users could generate QR codes, enhancing security and reliability.</li>
+            </ul>
+            <p class="justify-text">
+                Focused on improving user experience while maintaining high standards of functionality and security.
+                This project showcased my ability to blend technical expertise with practical application, driving tangible results for businesses.
+            </p>
+        </section>
+    </main>
+
+</body>
+
+</html>

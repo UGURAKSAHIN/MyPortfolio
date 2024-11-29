@@ -1,0 +1,114 @@
+﻿@{
+    ViewData["Title"] = "Skills";
+
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skills</title>
+    <link rel="stylesheet" href="~/css/site.css">
+</head>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        line-height: 1.6;
+    }
+
+    header {
+        background-color: #333;
+        padding: 10px 0;
+    }
+
+    nav ul {
+        display: flex;
+        list-style: none;
+        justify-content: center;
+        padding: 0;
+        margin: 0;
+    }
+
+        nav ul li {
+            margin: 0 15px;
+        }
+
+            nav ul li a {
+                color: #fff;
+                text-decoration: none;
+                font-weight: bold;
+            }
+
+                nav ul li a:hover {
+                    text-decoration: underline;
+                }
+
+    main {
+        margin: 40px auto;
+        max-width: 1000px;
+        padding: 0 20px;
+    }
+
+    .content-container {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .text-container {
+        flex: 1;
+        text-align: justify;
+    }
+
+    .image-container img {
+        max-width: 300px;
+        height: auto;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    h1 {
+        text-align: center;
+        margin-bottom: 30px;
+    }
+</style>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a asp-controller="Home" asp-action="Index">Home</a></li>
+                <li><a asp-controller="Home" asp-action="About">About</a></li>
+                <li><a asp-controller="Home" asp-action="WhatAmILookingFor">What Am I Looking For</a></li>
+                <li><a asp-controller="Home" asp-action="Skills">Skills</a></li>
+                <li><a asp-controller="Home" asp-action="Projects">Projects</a></li>
+                <li><a asp-controller="Home" asp-action="Contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1><strong>My Skills</strong></h1>
+        <div class="skill">
+            <p>C Language - I'm proficient at 95%</p>
+            <div class="bar">
+                <div class="bar-inner" style="width: 95%;"></div>
+            </div>
+        </div>
+        <div class="skill">
+            <p>C# - I'm proficient at 85%</p>
+            <div class="bar">
+                <div class="bar-inner" style="width: 85%;"></div>
+            </div>
+        </div>
+        <div class="skill">
+            <p>C++ - I'm proficient at 98%</p>
+            <div class="bar">
+                <div class="bar-inner" style="width: 98%;"></div>
+            </div>
+        </div>
+    </main>
+
+</body>
+</html>
