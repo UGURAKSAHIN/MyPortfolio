@@ -4,10 +4,15 @@
 This is a personal portfolio website built using ASP.NET Core MVC, following the Model-View-Controller (MVC) pattern. The project showcases my skills, projects, and professional experience with an interactive and responsive design.
 
 🚀 Features
+
 ✅ Modern UI/UX – Built with HTML, CSS, and JavaScript for an engaging design.
+
 ✅ Dynamic Content – Uses C# and ASP.NET Core MVC to serve dynamic pages.
+
 ✅ Responsive Design – Works on desktop, tablet, and mobile devices.
+
 ✅ Contact Form – Visitors can send messages via a contact form.
+
 ✅ SEO Optimized – Proper meta tags for better search engine visibility.
 
 🛠️ Technologies Used
