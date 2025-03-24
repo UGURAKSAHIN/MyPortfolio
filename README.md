@@ -33,8 +33,8 @@ Visual Studio – Development environment
 
 2️⃣ Clone the Repository
 
-# git clone https://github.com/yourusername/your-portfolio.git
-# cd your-portfolio
+- git clone https://github.com/yourusername/your-portfolio.git
+- cd your-portfolio
 
 3️⃣ Configure Database (If Applicable)
 
@@ -44,11 +44,11 @@ Visual Studio – Development environment
 
 Run migrations (if using Entity Framework):
 
-# dotnet ef database update
+- dotnet ef database update
 
 4️⃣ Run the Project
 
-# dotnet run
+- dotnet run
 
 🌍 Deployment
 
@@ -60,4 +60,4 @@ Docker (for containerized deployment)
 
 IIS (Internet Information Services)
 
-# az webapp up --name my-portfolio-app --resource-group myResourceGroup
+- az webapp up --name my-portfolio-app --resource-group myResourceGroup
